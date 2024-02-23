@@ -1,0 +1,420 @@
+/*Imports de secciones generales del proyecto*/
+@import url('imports/fonts.css');
+@import url('imports/nav-gob.css');
+@import url('imports/nav-logos.css');
+@import url('imports/nav-menu.css');
+
+:root{
+    --font-regular: 'Montserrat-Regular';
+    --font-bold: 'Montserrat-Bold';
+    --font-italic: 'Montserrat-Italic';
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--font-regular);
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+#banner{
+    position: relative;
+    height: 75vh;
+    width: 100%;
+    overflow: hidden;
+    padding: 50px 30px ;
+    background-image: url('../img/banner.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.title-logo{
+    position: absolute;
+}
+.title-logo> img{
+    width: 250px ;
+}
+.title{
+    margin-top: 50px;
+    font-family: var(--font-bold);
+    color: #621132;
+    font-size: 2.3em;
+    letter-spacing: 2px;
+}
+.text-mayusc{
+    text-transform: capitalize;
+    font-size: 1.4em;
+}
+.text-color-blue{
+    color: #042c6c;
+    font-family: var(--font-bold);
+}
+#separador{
+    position: relative;
+    background-color: #621132;
+    padding: 15px 30px;
+
+}
+.title-obj{
+   color: #fff;
+   font-family: var(--font-bold);
+   font-size: 3em;
+   letter-spacing: 2px;
+}
+
+#objetivo{
+    padding: 50px 20px;
+    position: relative;
+    background-image: url('../img/objetivo.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.title-obj-2{
+    font-family: var(--font-bold);
+    color: #042c6c;
+    font-size: 2.8em;
+    letter-spacing: 2px;
+}
+
+.text-lowercase{
+    font-family: var(--font-bold);
+}
+.text-blue{
+    max-width: 600px;
+    margin-top: 25px;
+    font-size: 13pt;
+    color: #000;
+    text-align: justify;
+}
+
+.title-separador{
+    width: 100%;
+    color: #621132;
+    text-transform: capitalize;
+    font-family: var(--font-bold);
+    font-size: 4em;
+    letter-spacing: 2px;
+    padding: 15px 30px;
+    text-align: center;
+}
+
+.list{
+    text-align: center;
+    font-size: 14pt;
+    font-family: var(--font-bold);
+    color: #621132 !important;
+}
+
+#modules{
+    margin-bottom: 50px;
+}
+
+
+.title-description{
+    color: #621132;
+    font-size: 18pt;
+    font-family: var(--font-bold);
+}
+.text-description{
+    font-size: 13pt;
+    font-family: var(--font-regular);
+    text-align: justify;
+}
+
+hr{
+    background-color: #621132;
+    height: 2px;
+}
+#investigadores{
+    background-color: #621132;
+    padding: 20px;
+}
+.btn-secondary{
+    font-family: var(--font-regular) !important;
+    background-color: #621132 !important;
+    border: none !important;
+    width: 100%;
+}
+.card{
+    background-color: #c2c2c2 !important;
+    border-radius: 0px !important;
+    margin-top: 50px;
+}
+.card-title{
+    font-family: var(--font-bold);
+    font-size: 12pt;
+    color: #000!important;
+}
+.card-img{
+    border-radius: 50% !important;
+    padding: 0 10px;
+    margin-top: -80px;
+}
+
+#aliados{
+    color: #042c6c;
+    padding: 20px;
+}
+#aliados > h2{
+    font-family: var(--font-bold);
+    font-size: 4em;
+}
+.img-container{
+    margin: 50px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.gob-red{
+    width: 200px;
+    margin: 0 10px;
+}
+.sep-red{
+    width: 220px;
+    margin: 0 10px;
+}
+.tecnm-red{
+    width: 140px;
+    margin: 0 10px;
+}
+.sonora-red{
+    width: 170px;
+    margin: 0 10px;
+}
+.line-red{
+    height: 50px;
+    width: 1px;
+    background-color: #621132;
+    margin: 0 10px;
+}
+.footer{
+    /*background-color: #242f5c;*/
+    background-color: #621132;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.img-footer img{
+    display: inline-block;
+    width: 12em;
+}
+.contact{
+    text-align: center;
+    color: #fff;
+    font-family: var(--font-regular);
+}
+.title-footer{
+    font-size: 11pt;
+    font-family: var(--font-bold);
+    letter-spacing: 2px;
+}
+.email-contact{
+    font-size: 10pt;
+}
+.email-contact > a{
+    color: #666666;
+    font-family: var(--font-bold);
+    letter-spacing: 2px;
+}
+.email-contact > a:hover{
+    color: #fff;
+    transition: 0.7s;
+}
+.copyright{
+    text-align: center;
+    font-family: var(--font-regular);
+    font-size: 8pt;
+    color: #fff;
+}
+.aviso{
+    display: inline-block;
+    color: inherit;
+    text-decoration: none;
+    font-size: 9pt;
+    margin-bottom: 10px;
+}
+.convocatoria{
+    color: #fff;
+    text-decoration: none;
+    font-size: 10pt;
+}
+.info{
+    font-size: 10pt;
+    color: #621132;
+}
+
+.text-font{
+    font-size: 10pt;
+}
+h5{
+    font-family: var(--font-bold);
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+.img-inv{
+    border-radius: 50%;
+}
+.list-item{
+    font-size: 10pt;
+}
+.btn-cerrar{
+    width: 200px;
+}
+.list-colaboradores{
+    display: flex;
+    flex-direction: row; 
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/*Responsive*/
+@media screen and (max-width:1024px) {
+    .title{
+        font-size: 2em;
+    }
+    .card{
+        margin-bottom: 30px;
+    }
+
+}
+
+@media screen and (max-width:990px) {
+    #banner{
+        height: 50vh;
+        background-size: 650px 100%;
+        background-position: right;
+    }
+    .text-blue{
+        width: 500px;
+    }
+    .gob-red{
+        width: 150px;
+    }
+    .sep-red{
+        width: 180px;
+    }
+    .tecnm-red{
+        width: 90px;
+    }
+    .sonora-red{
+        width: 100px;
+    }
+    .img-footer img{
+        display: inline-block;
+        width: 10em;
+    }
+    .title-footer{
+        font-size: 8pt;
+    }
+    .email-contact{
+        font-size: 8pt;
+    }
+    .convocatoria{
+        font-size: 8pt;
+    }
+
+}
+
+
+@media screen and (max-width:760px) and (orientation:landscape) {
+    #banner{
+        height: 100vh;
+    }
+    .title-logo > img{
+        width: 7em;
+    }
+    .title{
+        margin-top: 60px;
+        font-size: 1.9em;
+    }
+}
+@media screen and (max-width:480px) {
+    #banner{
+    height: 40vh;
+    background-size: 300px 100%;
+    background-position: right;
+    padding: 50px 10px;
+    }
+
+    .title-logo > img{
+        width: 5em;
+    }
+    .title{
+        margin-top: 10px;
+        font-size: 1.5em;
+    }
+    .title-obj{
+        font-size: 2em;
+    }
+    .title-obj-2{
+        font-size: 1.6em;
+    }
+    .text-blue{
+        width: 300px;
+        font-size: 10pt;
+    }
+    .list{
+        font-size: 10pt;
+        text-align: justify;
+        padding: 0 10px;
+    }
+    .title-separador{
+        font-size: 2.3em;
+    }
+    .title-description{
+        font-size: 12pt;
+    }
+    .text-description{
+        font-size: 9pt;
+    }
+    #investigadores{
+        padding: 20px 0;
+    }
+    .card{
+        width: 40% !important;
+        margin-right: 0;
+        
+    }
+    .card-title{
+        font-size: 10pt;
+    }
+    .btn-secondary{
+        font-size: 8pt !important;
+    }
+    .img-inv{
+        width: 300px;
+    }
+    #aliados > h2{
+        font-size: 2.5em;
+    }
+    .img-container{
+        flex-direction: column;
+        gap: 4px;
+    }
+    .gob-red{
+        margin-bottom: 10px;
+    }
+    .sep-red{
+        margin-bottom: 10px;
+    }
+    .line-red{
+        display: none;
+    }
+    .responsive{
+        flex-direction: column;
+    }
+    .img-footer{
+        display: none;
+    }
+    .contact{
+        padding: 10px;
+    }   
+}
